@@ -90,6 +90,6 @@ promise = map toLower . show
 -- ""
 promises :: Promises -> String
 promises [] = ""
-promises proms = if elem None proms
+promises proms = if None `elem` proms
                  then ""
-                 else concat $ intersperse " " $ map promise $ nub proms
+                 else unwords (map promise $ nub proms)

@@ -2,8 +2,8 @@ language: haskell
 ghc:
   - 7.8
 before_install:
-  - cabal install doctest
+  - cabal install happy hlint
 install:
   - cabal configure && cabal build
 script:
-  - doctest src
+  - hlint src

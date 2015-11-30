@@ -1,0 +1,8 @@
+language: haskell
+ghc: 7.10
+before_install:
+  - cabal install doctest
+install:
+  - cabal configure && cabal build
+script:
+  - doctest src

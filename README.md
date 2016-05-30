@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/oherrala/hs-pledge.svg?branch=master)](https://travis-ci.org/oherrala/hs-pledge)
-
 Haskell library for OpenBSD's pledge(2)
 =======================================
 

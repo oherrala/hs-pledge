@@ -1,9 +1,0 @@
-language: haskell
-ghc:
-  - 7.8
-before_install:
-  - cabal install happy hlint
-install:
-  - cabal configure && cabal build
-script:
-  - hlint src
